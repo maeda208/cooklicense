@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  resources :problems, only: :index
+  resources :problems do
+  member do
+    get 'abc'
+  end
+end
 end
