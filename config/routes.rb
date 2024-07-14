@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :problems do
-  member do
-    get 'abc'
+  root to: 'problems#index'
+  resources :problems, only: :index do
+    collection do
+      get 'abc'
+    end
   end
-end
 end
