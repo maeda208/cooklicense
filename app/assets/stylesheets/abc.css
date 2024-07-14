@@ -1,0 +1,35 @@
+.header{
+  text-align: center;
+}
+
+.abc{
+  margin: 0 auto;
+  width: 600px;
+}
+
+.category{
+  font-size: 30px;
+  text-align: center;
+  color: green;
+}
+
+.select-message{
+  color: red;
+  font-size: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+}
+.select-button{
+  font-size: 20px;
+}
+
+.problem{
+  font-size: 20px;
+}
+
+.sentence{
+  font-size: 20px;
+}
