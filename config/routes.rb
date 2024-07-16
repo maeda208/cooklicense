@@ -4,5 +4,8 @@ Rails.application.routes.draw do
     collection do
       get 'abc'
     end
+    collection do
+      get 'cdf'
+    end
   end
 end
