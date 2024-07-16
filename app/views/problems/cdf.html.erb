@@ -1,0 +1,852 @@
+<div class="abc">
+<%= form_with url: abc_problems_path, method: :get do |form| %>
+<div class="category">
+公衆衛生学
+</div>
+</br>
+<div class="sentence">
+【1】保健所に関する記述について、正しいものを一つ選びなさい</div>
+ <div class="problem" id="problem1">
+  <%= form.submit "1.全ての市町村が設置している",class: 'select-button' %></br>
+  <%= form.submit "2.地域住民の平易な保健サービスを担当している",class: 'select-button'  %></br>
+  <%= form.submit "3.介護保険業務を所管している",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.地域における公衆衛生活動の拠点である",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   全ての市町村ではなく、指定された地域、2は保健センター、3は都道府県及び市町村が担っている。</span>
+</div>
+</br>
+<div class="sentence">
+【2】我が国の人口統計に関する記述で、（　　　）に入る語句の組み合わせとして、正しいものを一つ選びなさい。</br>
+『（　A　）と（　B　）は、常に同じ値（数値）を示す。』</div>
+ <div class="problem" id="problem2">
+<%= form.submit "1.A：出生率 --------- B：合計特殊出生率",class: 'select-button' %>
+  <%= form.submit "2.A：老年化指数 ----- B：従属人口指数",class: 'select-button'  %></br>
+  <div class="option">
+    <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.A：平均寿命 ------- B：0歳の平均余命",class: 'select-button'  %></div>
+  <%= form.submit "4.A：粗死亡率 ------- B：年齢調整死亡率",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   平均寿命とは、0歳児における平均余命を表している。</span>
+   </div>
+</br>
+<div class="sentence">
+【3】食品を汚染する環境物質に関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem3">
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.水俣病は、カドミウムを蓄積した魚介類の摂取により発生した。",class: 'select-button' %></div>
+  <%= form.submit "2.食品に残留する農薬については、その残留許容濃度が定められている。",class: 'select-button'  %>
+  <%= form.submit "3.PCB（ポリ塩化ビフェニル）は、油症の原因になった。",class: 'select-button'  %></br>
+  <%= form.submit "4.ダイオキシン類は、工場などからの排煙、排水中の濃度が規制されている。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   カドミウムはイタイイタイ病</span>
+   </div>
+</br>
+<div class="sentence">
+【4】インフルエンザに関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem4">
+  <%= form.submit "1.主な症状は、下痢と嘔吐（おうと）である",class: 'select-button' %></br>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.病原体は、ウイルスである",class: 'select-button'  %></div>
+  <%= form.submit "3.感染は、蚊の媒介により行われる",class: 'select-button'  %>
+  <%= form.submit "4.予防接種法による定期予防接種の対象は、原則13歳以下である",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   主な症状は呼吸器疾患・発熱・頭痛・筋肉痛、感染は飛沫感染又は接触感染、摂取の年齢制限はない。</span>
+   </div>
+</br>
+<div class="sentence">
+【5】我が国の長期化するライフステージとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem5">
+  <%= form.submit "1.乳児期",class: 'select-button' %></br>
+  <%= form.submit "2.幼児期",class: 'select-button'  %></br>
+  <%= form.submit "3.成人期",class: 'select-button'  %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.高齢期",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   現在の日本人の平均寿命は年々延びている。</span>
+   </div>
+</br>
+<div class="sentence">
+【6】精神障害者の入院に関する記述で、（　　　）に入る語句として、正しいものを一つ選びなさい。</br>
+『精神障害者の人権を尊重して必要な入院を行うために、精神保健福祉法によって、精神病院の管理者は精神障害者本人の同意による（　　　）に努めなければならない。』</br>
+精神保健福祉法 : 精神保健及び精神障害者福祉に関する法律
+</div>
+<div class="problem" id="problem6">
+  <%= form.submit "1.措置入院",class: 'select-button' %>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.任意入院",class: 'select-button'  %></div>
+  <%= form.submit "3.医療保護入院",class: 'select-button'  %></br>
+  <%= form.submit "4.応急入院",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   措置入院は自分や他人を傷つけるおそれのある人を入院させるもの。</br>
+   医療保護入院は、家族等の同意による入院。</br>
+   応急入院は、本人またはその家族等の同意がなくても、精神保健指定医が緊急の入院が必要と認めたときに、72時間を限度として行われる入院。</span>
+   </div>
+</br>
+<div class="sentence">
+【7】母子保健法に基づく事業として、誤っているものを一つ選びなさい</div>
+<div class="problem" id="problem7">
+  <%= form.submit "1.未熟児の養育医療",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.育成医療",class: 'select-button'  %></div>
+  <%= form.submit "3.満3歳児の健康検査",class: 'select-button'  %></br>
+  <%= form.submit "4.妊産婦の保健指導",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   育成医療は、児童福祉法に基づいておこなわれるもの。</span>
+   </div>
+</br>
+<div class="sentence">
+【8】学校保健安全法による学校保健の対象として、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem8">
+  <%= form.submit "1.大学生",class: 'select-button' %></br>
+  <%= form.submit "2.高校生",class: 'select-button'  %></br>
+  <%= form.submit "3.小学生",class: 'select-button'  %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.保育園児",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   保育園児は、児童福祉法による対象になるため、学校保健の対象とならない。</span>
+   </div>
+</br>
+<div class="sentence">
+【9】作業環境より作業方法が原因となる職業病として、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem9">
+  <%= form.submit "1.職業性皮膚炎",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.頸肩腕(けいけんわん)症候群",class: 'select-button'  %></div>
+  <%= form.submit "3.熱中症",class: 'select-button'  %></br>
+  <%= form.submit "4.振動病",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   職業性皮膚炎は作業上取り扱うものが原因、熱中症は作業環境が原因、振動病は作業条件が原因。</span>
+   </div>
+</br>
+<div class="sentence">
+【10】外因性内分泌かく乱化学物質（環境ホルモン）として、誤っているものを一つ選びなさい</div>
+<div class="problem" id="problem10">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.メチル水銀",class: 'select-button' %></div>
+  <%= form.submit "2.ダイオキシン",class: 'select-button'  %></br>
+  <%= form.submit "3.PCB(ポリ塩化ビフェニル)",class: 'select-button'  %></br>
+  <%= form.submit "4.ビスフェノールA",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+  メチル水銀は、水俣病の原因であり、環境ホルモンではない。</span>
+   </div>
+</br>
+<div class="category">
+食品学
+</div></br>
+<div class="sentence">
+【11】食品のたんぱく質・アミノ酸に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem11">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.アミノ酸は、分子内にカルボキシル基を持つ",class: 'select-button' %></div>
+  <%= form.submit "2.食品のたんぱく質を構成するアミノ酸は、全てD型である",class: 'select-button'  %></br>
+  <%= form.submit "3.食品のたんぱく質を構成するアミノ酸は、9種類である",class: 'select-button'  %>
+  <%= form.submit "4.たんぱく質が熱変性するとき、多数の遊離アミノ酸が生成される",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   たんぱく質を構成するアミノ酸はすべてL型。</br>
+   食品のたんぱく質を構成するアミノ酸は20種類。</br>
+   遊離アミノ酸とは、たんぱく質を構成しないアミノ酸。</span>
+   </div>
+</br>
+<div class="sentence">
+【12】小麦粉の種類とその製品の組み合わせとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem12">
+  <%= form.submit "1.強力粉 --------- スポンジケーキ ",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.中力粉 --------- うどん",class: 'select-button'  %></div>
+  <%= form.submit "3.薄力粉 --------- パスタ",class: 'select-button'  %></br>
+  <%= form.submit "4.デュラム粉 ----- はるさめ",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   スポンジケーキは薄力粉、パスタにはデュラム粉、はるさめは芋や豆などのでんぷんが原料</span>
+   </div>
+</br>
+<div class="sentence">
+【13】野菜類に含まれる特徴的成分に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem13">
+  <%= form.submit "1.ほうれんそうに含まれる栄養素吸収阻害成分は、アスコルビン酸である。",class: 'select-button' %>
+  <%= form.submit "2.たまねぎに含まれるにおい成分は、チロシンである。",class: 'select-button'  %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.トマトに含まれる色素成分は、リコペン（リコピン）である。",class: 'select-button'  %></div>
+  <%= form.submit "4.だいこんに含まれる辛味成分は、硫化アリルである。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+  アスコルビン酸とは、ビタミンCのことで、栄養素吸収阻害成分ではない。</br>
+  チロシンとは、アミノ酸の一種でにおい成分ではない。</br>
+  硫化アリルは、たまねぎのにおい成分で辛み成分ではない。</span>
+   </div>
+</br>
+<div class="sentence">
+【14】魚肉に含まれる脂質に関する記述で、（　　　）に入る語句の組み合わせとして、正しいものを一つ選びなさい。</br>
+『（　A　）より（　B　）に多く含まれている。』</div>
+<div class="problem" id="problem14">
+  <%= form.submit "1.A：赤身魚 ------ B：白身魚",class: 'select-button' %></br>
+ <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.A：普通肉 ------ B：血合肉",class: 'select-button'  %></div>
+  <%= form.submit "3.A：腹側肉 ------ B：背側肉 ",class: 'select-button'  %></br>
+  <%= form.submit "4.A：養殖魚 ------ B：天然魚",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   白身魚より赤身魚のほうが脂質量は多い。</br>
+   背側肉より腹側肉のほうが脂質量は多い。</br>
+   天然魚よりも養殖魚のほうが脂質量は多い。</span>
+   </div>
+</br>
+<div class="sentence">
+【15】豚肉の部位と肉質に関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem15">
+  <%= form.submit "1.「ロース」は、肉質がやわらかく脂肪の風味も良い。",class: 'select-button' %></br>
+  <%= form.submit "2.「ヒレ」は、きめ細かく肉質もやわらかいが、脂肪含量は少ない。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.「もも」は、脂肪が多く含まれるが、肉質はすじが多く硬い。",class: 'select-button'  %></div>
+  <%= form.submit "4.「ばら」は、三枚肉とも呼ばれ、筋肉と脂肪が交互に層状となっている。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   ももは筋肉に多い赤身の肉で、全体的に脂肪が少なく、肉質はきめ細かくて柔らかい</span>
+   </div>
+</br>
+<div class="sentence">
+【16】発酵調味料に関する記述について、正しいものを一つ選びなさい</div>
+<div class="problem" id="problem16">
+  <%= form.submit "1.濃口しょうゆの塩分濃度は、約30%である",class: 'select-button' %></br>
+  <%= form.submit "2.薄口しょうゆの塩分濃度は、約9%である",class: 'select-button'  %></br>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.たまりしょうゆは、ほとんど小麦を使わず、大豆のみを原料とする",class: 'select-button'  %></div>
+  <%= form.submit "4.しょっつる（魚醤（ぎょしょう））は、大豆に魚を加えて発酵させたものである",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   濃口醬油の塩分濃度は16～17％程度。</br>
+   薄口醤油の塩分濃度は17～19％程度。</br>
+   しょっつるは、魚に塩を加えて作られ、大豆は不使用。</span>
+   </div>
+   </br>
+<div class="category">
+栄養学
+</div>
+</br>
+<div class="sentence">
+【17】栄養素に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem17">
+  <%= form.submit "1.五大栄養素は、いずれもエネルギー源となる栄養素である。",class: 'select-button' %></br>
+  <%= form.submit "2.糖質とミネラルは、骨の構成成分となる。",class: 'select-button'  %>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.ビタミンとミネラルは、人体の機能を調節する。",class: 'select-button'  %></div>
+  <%= form.submit "4.たんぱく質とビタミンは、微量栄養素と呼ばれる。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   五大栄養素でエネルギー源となるのはたんぱく質、炭水化物、脂質の3種類。</br>
+   骨の構成成分となるのは、たんぱく質（コラーゲン）及びミネラル（カルシウム）。</br>
+   微量栄養素とは、ビタミンとミネラル。</span>
+   </div>
+</br>
+<div class="sentence">
+【18】血液凝固に関係するビタミンとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem18">
+  <%= form.submit "1.ビタミンA",class: 'select-button' %></br>
+  <%= form.submit "2.ビタミンD",class: 'select-button'  %></br>
+  <%= form.submit "3.ビタミンE",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.ビタミンK",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   ビタミンAは皮膚や粘膜、視力を保つ働きのあるビタミン。</br>
+   ビタミンDは骨の形成とはたらきに関係するビタミン。</br>
+   ビタミンEは必須脂肪酸の酸化を防いだり、老化防止に役立つビタミン。</span>
+   </div>
+</br>
+<div class="sentence">
+【19】ミネラルに関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem19">
+  <%= form.submit "1.マンガンが不足すると くる病になる。",class: 'select-button' %></br>
+  <%= form.submit "2.カルシウムとリンの摂取比率は、1：5 が望ましい。",class: 'select-button'  %>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.カリウムは、細胞外液より細胞内液に多く含まれている。",class: 'select-button'  %></div>
+  <%= form.submit "4.消化管における鉄の吸収は、フィチン酸が存在すると促進される。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   くる病は、ビタミンDの欠乏症。</br>
+   カルシウムとリンの摂取比率は、1：1が望ましい。</br>
+   フィチン酸は、鉄の吸収を阻害する。</span>
+   </div>
+</br>
+<div class="sentence">
+【20】消化管における栄養素の吸収に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem20">
+  <%= form.submit "1.ショ糖（スクロース）は、そのままの形で吸収される。",class: 'select-button' %></br>
+  <%= form.submit "2.脂肪は、胃から吸収される。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.カルシウムの吸収率は、加齢に伴って低下する。",class: 'select-button'  %></div>
+  <%= form.submit "4.鉄の吸収率は、約90%である。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   ショ糖は摂取すると単糖類に分解されてから消化される。</br>
+   胃から吸収されるのはたんぱく質。</br>
+   鉄の吸収率は約15%。</span>
+   </div>
+</br>
+<div class="sentence">
+【21】脂質に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem21">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.コレステロールは、細胞膜の構成成分である。",class: 'select-button' %></div>
+  <%= form.submit "2.飽和脂肪酸は、動物油脂より植物油脂に多く含まれている。",class: 'select-button'  %></br>
+  <%= form.submit "3.エイコサペンタエン酸（EPA）は、飽和脂肪酸である。",class: 'select-button'  %></br>
+  <%= form.submit "4.飽和脂肪酸は、体内で合成できない脂肪酸である。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   飽和脂肪酸は、植物油脂より動物油脂に多く含まれている。</br>
+   EPAは魚などに多く含まれる脂肪酸で、不飽和脂肪酸。</br>
+   体内で合成できない脂肪酸は必須脂肪酸。</span>
+   </div>
+</br>
+<div class="sentence">
+【22】生活習慣病の一次予防に関する取り組みとして、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem22">
+  <%= form.submit "1.禁煙",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.がん検診",class: 'select-button'  %></div>
+  <%= form.submit "3.適正な食事量",class: 'select-button'  %></br>
+  <%= form.submit "4.運動不足の解消",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   がん検診は生活習慣病の一次予防に関する取り組みには当てはまらない</span>
+   </div>
+</br>
+<div class="sentence">
+【23】メタボリックシンドロームの測定項目とその診断基準の組み合わせとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem23">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.測定項目：腹囲（男性） --------------- 診断基準：85 cm 以上",class: 'select-button' %></div>
+  <%= form.submit "2.測定項目：HDL コレステロール値 ------- 診断基準：40 mg/dL 以上",class: 'select-button'  %></br>
+  <%= form.submit "3.測定項目：収縮期血圧（最高血圧） ----- 診断基準：200 mmHg 以上",class: 'select-button'  %></br>
+  <%= form.submit "4.測定項目：空腹時血糖値 --------------- 診断基準：150 mg/dL 以上",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   HDLコレステロール値は40㎎/dl未満、最高血圧は130㎜Hg以上、空腹時血糖値は110㎎/dl以上が基準</span>
+</div>
+</br>
+<div class="sentence">
+【24】健康な高齢者の食に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem24">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.食物繊維の多いものを摂るように心がける。",class: 'select-button' %></div>
+  <%= form.submit "2.胃液分泌が増加するので、たんぱく質や脂肪は多く摂ってもよい。",class: 'select-button'  %></br>
+  <%= form.submit "3.水分補給は、少なくするように心がける。",class: 'select-button'  %></br>
+  <%= form.submit "4.味覚が低下するので、濃い味付けにする。",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   胃液分泌が減少し、消化吸収力が低下するため、脂肪など油の多い物は胃に負担がかかる。</br>
+   のどの渇きを感じづらくなり、脱水症になりやすいため、水分補給は多くする。</br>
+   塩分の取りすぎを防ぐため、薄味を心がける。</span>
+   </div>
+</br>
+<div class="sentence">
+【25】肥満に関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem25">
+  <%= form.submit "1.肥満を判定するBMI（体格指数）は、身長と体重を使って求める。",class: 'select-button' %></br>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.BMIが22以上を肥満と判定する。",class: 'select-button'  %></div>
+  <%= form.submit "3.肥満は、高尿酸血症（痛風）の危険性を増大させる。",class: 'select-button'  %>
+  <%= form.submit "4.肥満の原因は、エネルギーの過剰摂取である。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+  BMIが25以上を肥満と判定する</span>
+   </div>
+   </br>
+<div class="category">
+食品衛生学
+</div></br>
+<div class="sentence">
+【26】熱に強い芽胞を作る細菌として、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem26">
+  <%= form.submit "1.サルモネラ属菌",class: 'select-button' %></br>
+  <%= form.submit "2.腸管出血性大腸菌",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.ウエルシュ菌",class: 'select-button'  %></div>
+  <%= form.submit "4.リステリア・モノサイトゲネス",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   サルモネラ属菌、腸管出血性大腸菌、リステリア・モノサイトゲネスは加熱に弱い</span>
+   </div>
+</br>
+<div class="sentence">
+【27】食中毒菌とその食中毒の主な症状の組み合わせとして、正しいものを一つ選びなさい</div>
+<div class="problem" id="problem27">
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.黄色ブドウ球菌 ------- 吐き気、嘔吐（おうと）",class: 'select-button' %></div>
+  <%= form.submit "2.ボツリヌス菌 --------- 溶血性尿毒症症候群",class: 'select-button'  %></br>
+  <%= form.submit "3.ウエルシュ菌 --------- じん麻疹（ましん）",class: 'select-button'  %></br>
+  <%= form.submit "4.腸管出血性大腸菌 ----- 呼吸麻痺（まひ）",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   ボツリヌス菌による症状は倦怠感や呼吸困難、麻痺症状。</br>
+   ウエルシュ菌、腸管出血性大腸菌による症状は下痢や腹痛。</span>
+   </div>
+</br>
+<div class="sentence">
+【28】食品添加物とその用途や効果の組み合わせとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem28">
+  <%= form.submit "1.品質保持剤 ----- 食品の腐敗を防止する",class: 'select-button' %>
+  <%= form.submit "2.保存料 --------- 食品の酸化を防止する",class: 'select-button'  %></br>
+  <%= form.submit "3.安定剤 --------- 水分の蒸発を防ぎ新鮮さを保持する",class: 'select-button'  %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.乳化剤 --------- 水と油を混ぜ合わせ均一にする",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+  品質保持剤は、食感や味など食品の品質を保持する。</br>
+  保存料は、細菌の増殖を防止し変質や腐敗を防ぐ。</br>
+  安定剤は、乳化や粘度、pHなど、食品の状態を安定させる。</span>
+   </div>
+</br>
+<div class="sentence">
+【29】旋毛虫（トリヒナ）に関する記述で、（　　　）に入る語句の組み合わせとして、正しいものを一つ選びなさい。</br>
+『旋毛虫は、人獣共通感染症の病原体の一種で、体長はメスで 3 ～ 4 mm、オスで 1.5 mmの（　A　）である。主に感染した（　B　）の生食によって人に感染する。』</div>
+<div class="problem" id="problem29">
+  <%= form.submit "1.A：吸虫 ----- B：獣肉",class: 'select-button' %></br>
+  <%= form.submit "2.A：吸虫 ----- B：魚介類 ",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.A：線虫 ----- B：獣肉",class: 'select-button'  %></div>
+  <%= form.submit "4.A：線虫 ----- B：魚介類",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   クマ・ブタ・ウマ肉が原因食品で、線虫が小腸や筋肉に寄生する</span>
+   </div>
+</br>
+<div class="sentence">
+【30】カビに関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem30">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.カビ毒の中には、アフラトキシンのような強い発がん性を持つものがある。",class: 'select-button' %></div>
+  <%= form.submit "2.カビが産生する有害物質は、総称してエンテロトキシンという。",class: 'select-button'  %></br>
+  <%= form.submit "3.カビは有毒であるため、食品の製造・加工には利用されない。",class: 'select-button'  %></br>
+  <%= form.submit "4.米のカビ毒は、テトロドトキシンである。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   エンテロトキシンは細菌が産生する有害物質（腸内毒素）の総称。</br>
+   カビには有毒のものと無毒のものがあり、無毒のものは食品加工に利用されている。</br>
+   テトロドトキシンは、フグの内臓に蓄積される神経毒。</span>
+   </div>
+</br>
+<div class="sentence">
+【31】アルコール消毒に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem31">
+  <%= form.submit "1.アルコールは残留性が高い。",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.純アルコールより、70%溶液の方が殺菌力は強い。",class: 'select-button'  %></div>
+  <%= form.submit "3.手指の消毒には適さない。",class: 'select-button'  %></br>
+  <%= form.submit "4.対象物の表面に水分がある状態にして噴霧する。",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   アルコールは揮発性が高い、手指の消毒に適している、しっかり水分をふき取ったうえで噴霧する</span>
+   </div>
+</br>
+<div class="sentence">
+【32】食品衛生法による記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem32">
+  <%= form.submit "1.法律の目的は、飲食に起因する衛生上の危害発生防止である。",class: 'select-button' %></br>
+  <%= form.submit "2.容器や包装の製造者は、食品等事業者である。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.医薬部外品は、食品に含まれている。",class: 'select-button'  %></div>
+  <%= form.submit "4.輸入した食品は、食品衛生法の対象である。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   食品衛生法第4条に「薬事法に規定する医薬品及び医薬部外品は含まない」と記されている</span>
+   </div>
+</br>
+<div class="sentence">
+【33】調理従事者等の衛生管理に関する記述について、誤っているものを一つ選びなさい</div>
+<div class="problem" id="problem33">
+  <%= form.submit "1.下痢をしている者は、直接食品を取り扱う業務に携わらない",class: 'select-button' %></br>
+  <%= form.submit "2.手指に傷のある者は、直接食品を取り扱う業務に携わらない",class: 'select-button'  %></br>
+  <%= form.submit "3.食中毒菌の保菌者は、完全に菌がなくなるまで直接食品を取り扱う業務に携わらない",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.健康な者は、定期的な検便を行わなくてもよい",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   調理従事者は、健常者でも全て月に1回以上検便を行い保菌者でないか確認する必要がある</span>
+   </div>
+</br>
+<div class="sentence">
+【34】食品衛生行政に関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem34">
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.農林水産省は、食品衛生法を所管している。",class: 'select-button' %></div>
+  <%= form.submit "2.保健所は、食品衛生監視員が配置されている食品衛生行政の第一線機関である。",class: 'select-button'  %>
+  <%= form.submit "3.食品衛生監視員は、必要に応じて無償で食品を収去することができる。",class: 'select-button'  %></br>
+  <%= form.submit "4.輸入食品の監視のため、全国の主要港や空港に検疫所が設けられている。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   食品衛生法の所轄は厚生労働省が行っている</span>
+   </div>
+</br>
+<div class="sentence">
+【35】食品の殺菌・保存に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem35">
+  <%= form.submit "1.レトルト殺菌は、減圧しながら加熱殺菌する方法である。",class: 'select-button' %></br>
+  <%= form.submit "2.紫外線の照射は、スポンジの内部まで殺菌することができる。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.放射線の照射は、我が国ではじゃがいもの発芽防止の目的で行われている。",class: 'select-button'  %></div>
+  <%= form.submit "4.無酸素状態での保存は、全ての菌の増殖を抑えることができる。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   レトルト殺菌は加圧しながら加熱殺菌する。</br>
+   紫外線の照射はスポンジ内部まで殺菌するには不十分。</br>
+   無酸素状態を好む菌も存在するため、全ての菌の増殖を抑えることはできない。</span>
+   </div>
+</br>
+<div class="sentence">
+【36】HACCP（Hazard Analysis Critical Control Points）に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem36">
+  <%= form.submit "1.最終製品の検査を一つ一つ行うことにより、その食品が安全であるか否かを決める管理手法である。",class: 'select-button' %></br>
+  <%= form.submit "2.大企業に対しての専有的な管理手法であり、小規模な食品製造業や調理施設には適用できない。",class: 'select-button'  %></br>
+  <%= form.submit "3.HACCPを導入することにより、従来から行われている一般的衛生管理プログラムは必要なくなる。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.食品製造工程の危害要因を分析し、特に重点的に衛生管理を行わなければならない点をCCPとして管理する。",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   HACCPは原材料から最終検査までの各工程で管理、記録する管理手法。</br>
+   大企業から小規模施設まですべての施設に適用される。</br>
+   一般的衛生管理プログラムと組み合わせることで、より衛生管理に努めることができる。</span>
+   </div>
+</br>
+<div class="sentence">
+【37】じゃがいもに関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem37">
+  <%= form.submit "1.有毒成分として、ソラニンがある。",class: 'select-button' %>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.有毒成分は、発芽部分のみに存在する。",class: 'select-button'  %></div>
+  <%= form.submit "3.有毒成分による中毒症状は、嘔吐（おうと）、下痢、腹痛、めまいなどである。",class: 'select-button'  %></br>
+  <%= form.submit "4.風通しのよい涼しい場所で保管し、日光が当たらないようにする。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   有毒成分は、発芽部分や緑になった部分に多く含まれまる</span>
+   </div>
+</br>
+<div class="sentence">
+【38】食品の衛生管理に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem38">
+  <%= form.submit "1.冷凍食品は、食品衛生法に基づき −10°C以下で保存しなければならない。",class: 'select-button' %>
+  <%= form.submit "2.下処理用のまな板は、肉と魚で同じものを使用する。",class: 'select-button'  %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.コールドチェーンとは、食品を品質保持に最適な低温帯で途切れずに運搬・保管することである。",class: 'select-button'  %></div>
+  <%= form.submit "4.冷蔵庫内の温度は、庫内にできるだけ隙間なく食品を入れた方が安定する。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   冷凍食品は−15°C以下で保存する。</br>
+   下処理用のまな板は、肉、魚、野菜など分けて使用する。</br>
+   冷蔵庫は７割程度に詰めた方が良い。</span>
+   </div>
+</br>
+<div class="sentence">
+【39】たんぱく質が腐敗細菌によって分解されるときに発生する物質として、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem39">
+  <%= form.submit "1.硫化水素",class: 'select-button' %></br>
+  <%= form.submit "2.アンモニア",class: 'select-button'  %></br>
+  <%= form.submit "3.アミン類",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.アルコール",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   アルコールは糖類などの分解によって生成される</span>
+   </div>
+</br>
+<div class="sentence">
+【40】食品衛生法で規定する用語の定義に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem40">
+  <%= form.submit "1.「食品」とは、医薬品を含む、全ての飲食物をいう。",class: 'select-button' %></br>
+  <%= form.submit "2.「添加物」とは、化学的に合成されたものをいう。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.「天然香料」とは、動植物から得られた物又はその混合物で、食品の着香の目的で使用される添加物をいう。",class: 'select-button'  %></div>
+  <%= form.submit "4.「容器包装」とは、食品又は添加物を入れ、又は包んでいる合成樹脂製の物をいう。",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+   食品とは、医薬品及び医薬部外品を除く、全ての飲食物のことを指す。</br>
+   添加物には、科学的に合成されたものと、天然の動植物より作られたものがある。</br>
+   容器包装に合成樹脂製という指定はない。</span>
+   </div>
+   </br>
+<div class="category">
+調理理論
+</div></br>
+<div class="sentence">
+【41】基本的な切り方に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem41">
+  <%= form.submit "1.面取りは、煮崩れを防止するために、材料の裏側に切り込みを入れる",class: 'select-button' %></br>
+  <%= form.submit "2.色紙切りは、マッチ棒状に切る",class: 'select-button'  %></br>
+  <%= form.submit "3.千六本は、長さ4～5cmで1cm角に切る",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.ささがきは、細い野菜を回しながら、鉛筆を削るように切る",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   面取りは、煮崩れを防止するために、材料の角を丸く削ぐ切り方。</br>
+   色紙切りは、色紙のように正方形に薄切りする切り方。</br>
+   千六本は、長さ 4 ～ 5 cmで 2㎜角程度に細く切る。</span>
+   </div>
+  </br>
+    <div class="sentence">
+【42】非加熱調理操作に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem42">
+  <%= form.submit "1.きゅうりの千切りを 2 %の食塩水に浸漬すると、歯ごたえがよくなる。",class: 'select-button' %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.生わさびをすりおろす時、目の細かいおろし器でおろすと辛味が増す。",class: 'select-button'  %></div>
+  <%= form.submit "3.あさりの砂出しには、約 2 %の砂糖水を用いる。",class: 'select-button'  %>
+  <%= form.submit "4.根菜類に隠し包丁を入れると、調味料の浸透が遅れる。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   きゅうりの千切りを 2 %の食塩水に浸漬すると歯ごたえが柔らかくなる。</br>
+   あさりの砂出しには、約 3%の食塩水を用いる。</br>
+   根菜類に隠し包丁を入れると、調味料の浸透が早くなる。</span>
+   </div>
+  </br>
+  <div class="sentence">
+【43】次の乾物のうち、吸水による重量増加率が最も低いものを一つ選びなさい。</div>
+<div class="problem" id="problem43">
+  <%= form.submit "1.干ししいたけ",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.大豆",class: 'select-button'  %></div>
+  <%= form.submit "3.切り干し大根",class: 'select-button'  %></br>
+  <%= form.submit "4.ひじき",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   干ししいたけの重量増加率は約4～5倍、大豆は約2.5倍、切り干し大根は約4倍、ひじきは約8～10倍</span>
+   </div>
+</br>
+<div class="sentence">
+【44】加熱調理操作に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem44">
+  <%= form.submit "1.湿式加熱調理は、水を媒体としない加熱調理操作である。",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.焼き物調理は、水分減少が大きく、味が濃縮される。",class: 'select-button'  %></div>
+  <%= form.submit "3.マイクロ波による加熱は、温度上昇と食品中の水分量は無関係である。",class: 'select-button'  %></br>
+  <%= form.submit "4.煮物は、通常 100 °C以上の加熱が行われるので煮崩れしやすい。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   湿式加熱調理は、水を媒体とする加熱調理操作。</br>
+   マイクロ波による加熱では、温度上昇と食品中の水分量に相関性がある。</br>
+   煮物は、通常90～100℃で加熱される。</span>
+   </div>
+</br>
+<div class="sentence">
+【45】砂糖に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem45">
+  <%= form.submit "1.カラメルは、砂糖溶液を140°Cに煮詰めたものである。",class: 'select-button' %></br>
+  <%= form.submit "2.シロップは、砂糖溶液を130～150°Cに煮詰めたものである。",class: 'select-button'  %></br>
+  <%= form.submit "3.フォンダンは、砂糖溶液を160～170°Cに煮詰めた後、40°C程度まで冷却したものである。",class: 'select-button'  %></br>
+ <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.飴（あめ）の結晶化を防止するため、食酢を加える。",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   カラメルは、砂糖溶液を 160 °C以上で煮詰めたもの。</br>
+   シロップは、砂糖溶液を 100 °C程度に煮詰めたもの。</br>
+   フォンダンは、砂糖溶液を 110～ 115 °Cに煮詰めた後、40 °C程度まで冷却したもの。</span>
+   </div>
+</br>
+<div class="sentence">
+【46】α（アルファ）− でんぷんの老化を抑制する方法に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem46">
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.急速に凍結させる",class: 'select-button' %></div>
+  <%= form.submit "2.水分含有量を30～60%に保つ",class: 'select-button'  %></br>
+  <%= form.submit "3.糖濃度を減少させる",class: 'select-button'  %></br>
+  <%= form.submit "4.温度を5 ～ 10 °Cに保つ",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   水分含有量が30～60%では、老化が始まるので60%以上を保つ。</br>
+   糖濃度を増加させることで老化を防ぐことができる。</br>
+   5～10°Cと温度が低いと老化が進行する。</span>
+   </div>
+</br>
+<div class="sentence">
+【47】小麦粉生地に加えるとグルテンの形成を促進するものとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem47">
+  <%= form.submit "1.砂糖",class: 'select-button' %></br>
+  <%= form.submit "2.油脂",class: 'select-button'  %></br>
+  <%= form.submit "3.氷水",class: 'select-button'  %>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.食塩",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   砂糖、油脂、氷水は、グルテンの形成を阻害する</span>
+   </div>
+</br>
+<div class="sentence">
+【48】煮豆に関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem48">
+ <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.大豆は、薄い食塩水よりも、真水に浸したものの方がやわらかく煮える。",class: 'select-button' %></div>
+  <%= form.submit "2.味付けの際に、砂糖を一度に加えるとしわがよることがある。",class: 'select-button'  %></br>
+  <%= form.submit "3.煮汁が少なくならないよう、お湯を足して豆が浸した状態で加熱する。",class: 'select-button'  %>
+  <%= form.submit "4.小豆は、最初に数回ゆでこぼして、渋切りを行う。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   大豆は、真水よりも、薄い食塩水に浸したほうが軟化が促進される</span>
+   </div>
+   </br>
+   <div class="sentence">
+【49】ソースの名称と材料の組み合わせとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem49">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.ベシャメルソース ------- 牛乳",class: 'select-button' %></div>
+  <%= form.submit "2.ブルーテソース --------- トマトピューレ",class: 'select-button'  %></br>
+  <%= form.submit "3.ブラウンソース --------- 酢・サラダ油",class: 'select-button'  %></br>
+  <%= form.submit "4.ビネグレットソース ----- ブイヨン",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   ブルーテソースとブラウンソースはブイヨン、ビネグレットソースは酢・サラダ油。</br>
+   上新粉に白玉粉を加えて練ると生地は柔らかくなる。</br>
+   上新粉に片栗粉を加えて練ると生地は硬くなる。</span>
+   </div>
+   </br>
+   <div class="sentence">
+【50】食品と含まれる色素の組み合わせとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem50">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.大豆 ------------- フラボノイド系色素",class: 'select-button' %></div>
+  <%= form.submit "2.赤かぶ ----------- カロテノイド系色素",class: 'select-button'  %>
+  <%= form.submit "3.カリフラワー ----- アントシアニン系色素",class: 'select-button'  %></br>
+  <%= form.submit "4.にんじん --------- クロロフィル系色素",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   赤かぶはアントシアニン系色素、</br>
+   カリフラワーはフラボノイド系色素、</br>
+   にんじんはカロテノイド系色素</span>
+   </div>
+   </br>
+   <div class="sentence">
+【51】食肉の部位と適する料理の組み合わせとして、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem51">
+  <%= form.submit "1.もも肉 ------- シチュー",class: 'select-button' %></br>
+  <%= form.submit "2.ささみ肉 ----- 和え物",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.すね肉 ------- ステーキ",class: 'select-button'  %></div>
+  <%= form.submit "4.ばら肉 ------- 角煮",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   すね肉は硬いので煮込み料理に適している</span>
+   </div>
+</br>
+<div class="sentence">
+【52】鶏卵の特性とその調理例の組み合わせとして、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem52">
+  <%= form.submit "1.卵黄の乳化性 ------- ハンバーグステーキ",class: 'select-button' %></br>
+  <%= form.submit "2.卵黄の起泡性 ------- マヨネーズ",class: 'select-button'  %></br>
+  <%= form.submit "3.卵白の乳化性 ------- メレンゲ",class: 'select-button'  %>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.全卵の熱凝固性 ----- カスタードプディング",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   ハンバーグに利用される鶏卵の特性は熱凝固性および保水性、卵黄の乳化性、メレンゲは卵白の起泡性</span>
+   </div>
+   </br>
+   <div class="sentence">
+【53】寒天ゼリーに関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem53">
+  <%= form.submit "1.寒天は、あおさなどの緑藻類から抽出される。",class: 'select-button' %></br>
+  <%= form.submit "2.寒天で作る牛乳かんの寒天濃度は、3～5%である。",class: 'select-button'  %></br>
+  <%= form.submit "3.高温に再加熱しても溶解しない。",class: 'select-button'  %></br>
+ <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.果汁は、寒天溶液が60°Cくらいに冷めてから加える。",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   寒天の原料は紅藻類、牛乳かんの寒天濃度は7～8%、高温で再加熱すると再度溶解する</span>
+   </div>
+</br>
+<div class="sentence">
+【54】ゼラチンゼリーに関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem54">
+  <%= form.submit "1.砂糖濃度が高いほど崩れやすい。",class: 'select-button' %>
+  <%= form.submit "2.ゼラチン濃度が高いほど崩れやすい。",class: 'select-button'  %></br>
+  <%= form.submit "3.寒天ゼリーより固く、弾力性がない。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.冷却時間が長いほどゼリー強度は高い。",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   砂糖を加えるとゼリー強度は高くなる、ゼラチン濃度が高いほど崩れにくい、寒天ゼリーより柔らかく弾力性が高い</span>
+   </div>
+</br>
+<div class="sentence">
+【55】油脂に関する記述で、（　　　）に入る語句として、正しいものを一つ選びなさい。</br>
+『油脂が劣化して、食用にならなくなる現象を（　　　）という。』</div>
+<div class="problem" id="problem55">
+  <%= form.submit "1.酸化",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.変敗",class: 'select-button'  %></div>
+  <%= form.submit "3.分解",class: 'select-button'  %></br>
+  <%= form.submit "4.重合",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   変敗とは食品が本来の性質を失い、食用に耐えられないような状態になること</span>
+   </div>
+</br>
+<div class="sentence">
+【56】日本料理に関する記述について、誤っているものを一つ選びなさい。</div>
+<div class="problem" id="problem56">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.精進料理では、かつお節のだし汁を使用する。",class: 'select-button' %></div>
+  <%= form.submit "2.煮物の技術を中心にして味付けをする。",class: 'select-button'  %></br>
+  <%= form.submit "3.季節の食材を大切にし、素材の持ち味を生かす。",class: 'select-button'  %></br>
+  <%= form.submit "4.素材の色や形などの見た目を尊重する。",class: 'select-button'  %>
+   <span class='select-message' style='display:none;'>解説</br>
+  精進料理に動物性食品は用いず、出汁にはしいたけや昆布を使用</span>
+   </div>
+   </br>
+<div class="category">
+食文化概論
+</div></br>
+<div class="sentence">
+【57】「和食；日本人の伝統的な食文化」がユネスコ無形文化遺産に登録された正しい年を一つ選びなさい。</div>
+<div class="problem" id="problem57">
+  <%= form.submit "1.平成12年(2000年)",class: 'select-button' %></br>
+  <%= form.submit "2.平成17年(2005年)",class: 'select-button'  %></br>
+  <%= form.submit "3.平成18年(2006年)",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.平成25年(2013年)",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   平成25年(2013年)12月に登録</span>
+   </div>
+  </br>
+  <div class="sentence">
+【58】日本の食事様式に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem58">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.本膳（ほんぜん）料理は、江戸時代にかけて発達した武家社会の式正料理である。",class: 'select-button' %></div>
+  <%= form.submit "2.卓袱（しっぽく）料理は、修行僧が日常生活の中で食した植物性の材料のみでつくられた料理である。",class: 'select-button'  %>
+  <%= form.submit "3.袱紗（ふくさ）料理は、酒を楽しむための茶屋料理である。",class: 'select-button'  %></br>
+  <%= form.submit "4.懐石（かいせき）料理は、江戸時代に発達した宴席料理である。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   卓袱料理は中国や西洋料理を取り入れた大皿に盛るコース料理。</br>
+   袱紗は本膳料理を簡略化した武家社会の料理。</br>
+   江戸時代に発達した宴席料理は会席料理。</span>
+   </div>
+   </br>
+   <div class="sentence">
+【59】地域における正月の雑煮の特徴に関する記述について、正しいものを一つ選びなさい。</div>
+<div class="problem" id="problem59">
+  <%= form.submit "1.宮城県の雑煮は、あご（とびうお）でとった汁に、ぶり、かまぼこなどと丸餅が入る。",class: 'select-button' %>
+  <%= form.submit "2.京都府の雑煮は、すまし仕立ての汁に、鶏肉、青菜、根菜などと角餅が入る。",class: 'select-button'  %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.香川県の雑煮は、白みそ仕立ての汁に、根菜類などとあん餅が入る。",class: 'select-button'  %></div>
+  <%= form.submit "4.鳥取県の雑煮は、焼きはぜでとった汁に、根菜などと角餅が入る。",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   宮城県の雑煮は、はぜでだしをとった汁に焼きはぜ、根菜などと角餅が入る。</br>
+   京都府の雑煮は、白味噌仕立ての汁に、三つ葉や根菜などと丸餅が入る。</br>
+   鳥取県の雑煮は、小豆の入った甘い汁粉仕立ての汁に、丸餅が入る。</span>
+   </div>
+<% end %>
+</br>
+<%= link_to "トップページ", root_path,class: :past__btn  %>
+</div>
