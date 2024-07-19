@@ -7,5 +7,8 @@ Rails.application.routes.draw do
     collection do
       get 'cdf'
     end
+    collection do
+      get 'fgh'
+    end
   end
 end
