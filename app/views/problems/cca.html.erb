@@ -1,0 +1,164 @@
+<div class="abc">
+<%= form_with url: abc_problems_path, method: :get do |form| %>
+<div class="sentence">
+【1】PCからサーバA(192.168.1.1)との通信が不可となった。PCからサーバAへpingを打つと、「Reply from 192.168.200.1: TTL expired in transit.」と表示される。このトラブルはOSI参照モデルのどの層が原因だと思われるか、一つ選べ</div>
+ <div class="problem" id="problem1">
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.ネットワーク層",class: 'select-button' %></div>
+  <%= form.submit "2.ルーティング層",class: 'select-button'  %></br>
+  <%= form.submit "3.アプリケーション層",class: 'select-button'  %></br>
+  <%= form.submit "4.セション層",class: 'select-button'  %></br>
+  </br>
+   <span class='select-message' style='display:none;'>解説</br>
+   「TTL expired in transit.」は，IPパケットのTTL(time to live)が0になり，IPパケットが廃棄されたことを示している。</br>
+   従って、経路途中にあるルータのルーティング設定ミスが起きているためルーティングループが起きていると考えられる。</br>
+   すなわち、IPレベルのトラブルであると考えられるため、第３層のネットワーク層が原因だと分かる。</span>
+</div>
+</br>
+<div class="sentence">
+【2】データ送信の際、ホストＡとホストＢは３ウエイハンドシェイク方式でデータのやり取りを行なった。この通信方式はOSI参照モデルの第何層にあたるか、一つ選べ</div>
+ <div class="problem" id="problem2">
+<%= form.submit "1.物理層",class: 'select-button' %>
+</br>
+  <%= form.submit "2.セション層",class: 'select-button'  %></br>
+   <div class="option">
+    <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.トランスポート層",class: 'select-button'  %></div>
+  <%= form.submit "4.データリンク層",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   ３ウェイハンドシェイク方式とは、いわゆるTCPなどのコネクション型通信を指す。</br>
+   第４層のトランスポート層がこの方式にあたる</span>
+   </div>
+</br>
+<div class="sentence">
+【3】次の用語の中で、ネットワーク層に相当するものを４つ選べ</div>
+<div class="problem" id="problem3">
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.ICMP ",class: 'select-button' %></div>
+  <%= form.submit "2.UDP",class: 'select-button'  %></br>
+  <%= form.submit "3.フレーム",class: 'select-button'  %></br>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.ARP",class: 'select-button'  %></div>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "5.ルーティング",class: 'select-button'  %></div>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "6.パケット",class: 'select-button'  %></div>
+  <%= form.submit "7.セグメント",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   ICMPはネットワークの障害を調べる為に使われるプロトコル</br>
+   ARPはIPアドレスから物理層のネットワーク・アドレス(MACアドレス)を求めるために利用されるプロトコル</br>
+   ルーティングはデータを目的地まで送信するための制御のこと</br>
+   パケットはデータ通信ネットワークを流れるデータの単位のこと</span>
+   </div>
+</br>
+<div class="sentence">
+【4】トランスポート層に相当する機能を次の選択肢の中から２つ選べ</div>
+<div class="problem" id="problem4">
+  <%= form.submit "1.文字コードや圧縮形式をネットワーク共通の形式に変換する",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.欠けたパケットがないか、順序正しく受け取っているかをチェックして通信を確実に行う",class: 'select-button'  %></div>
+  <%= form.submit "3.暗号化の方法を機器共通の形式に変換する",class: 'select-button'  %></br>
+   <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.受けたデータがどのようなアプリケーションを要求しているのかを調べて，セッション層以降の上位プロトコルへ渡す",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   1と3はプレゼンテーション層</span>
+   </div>
+</br>
+<div class="sentence">
+【5】データのカプセル化における、各レイヤの説明で、正しいものを１つ選べ</div>
+<div class="problem" id="problem5">
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.トランスポート層で制御データを付加する、このデータをセグメントという",class: 'select-button' %></div>
+  <%= form.submit "2.送信したい元データが物理層にあたる",class: 'select-button'  %></br>
+  <%= form.submit "3.レイヤ３でセグメントに制御データを付加する。このデータをフレームという",class: 'select-button'  %></br>
+  <%= form.submit "4.レイヤ２でセグメントに制御データを付加する。このデータをパケットという",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   2はアプリケーション層</br>
+   3はフレームではなくパケット</br>
+   レイヤ2で付加するのはセグメントではなくパケット、そのデータはフレーム</span>
+   </div>
+</br>
+<div class="sentence">
+【6】次のうち、クラスフルルーティングプロトルはどれか、１つ選べ</div>
+<div class="problem" id="problem6">
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "1.RIPv1",class: 'select-button' %></div>
+  <%= form.submit "2.RIPv2",class: 'select-button'  %></br>
+  <%= form.submit "3.EIGRP",class: 'select-button'  %></br>
+  <%= form.submit "4.OSPF",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   2、3、4はクラスレスルーティングプロトコル</span>
+   </div>
+</br>
+<div class="sentence">
+【7】MTU1500byteの意味として正しいものを一つ選べ</div>
+<div class="problem" id="problem7">
+  <%= form.submit "1.指定されたインターフェースで送信できる最大フレームサイズが１５００バイトまでである",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.指定されたインターフェースで送信できる最大パケットサイズが１５００バイトまでである",class: 'select-button'  %></div>
+  <%= form.submit "3.指定されたインターフェースで送信できる最小フレームサイズが１５００バイトまでである",class: 'select-button'  %></br>
+  <%= form.submit "4.指定されたインターフェースで送信できる最大セグメントサイズが１５００バイトまでである",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   フレーム、セグメントではなく最大パケットサイズが1500バイト</span>
+   </div>
+</br>
+<div class="sentence">
+【8】ＣＳＭＡ／ＣＤ方式において、ＣＳとＭＡとＣＤにあたる説明をそれぞれ一つずつ選べ</div>
+<div class="problem" id="problem8">
+  <%= form.submit "1.Tokenを受信する",class: 'select-button' %></br>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.複数のコンピュータが同時にデータの送信を行い、データの衝突が起こったことを検知する",class: 'select-button'  %></div>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "3.ケーブルを複数のコンピュータで共用してデータを送信する",class: 'select-button'  %></div>
+  <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "4.ケーブル上にすでにデータが流れていないかかどうかをチェックする",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   2はCD、3はMA、4はCS</br>
+   1はトークンパッシング方式</span>
+   </div>
+</br>
+<div class="sentence">
+【9】show interface serialコマンドで分かる情報はどれか、一つ選べ</div>
+<div class="problem" id="problem9">
+  <%= form.submit "1.administratively downの場合は、ポートが故障状態となっている",class: 'select-button' %></br>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "2.line protocol is up/downはレイヤ２の状態を表している",class: 'select-button'  %></div>
+  <%= form.submit "3.serial is up/downはレイヤ３の状態を表している",class: 'select-button'  %></br>
+  <%= form.submit "4.serial is downの状態でもline protocol is upの状態はあり得る",class: 'select-button'  %></br>
+   <span class='select-message' style='display:none;'>解説</br>
+   1.administratively downは管理者権限でダウンさせている状態</br>
+   3.serialはレイヤ１の状態</br>
+   4.レイヤ１がダウンしている状態でレイヤ２のアップはありえない</span>
+   </div>
+</br>
+<div class="sentence">
+【10】各プロトコルのポート番号の組み合わせは誤っているものはどれか、1つ選べ</div>
+<div class="problem" id="problem10">
+  <%= form.submit "1.TELNET:23",class: 'select-button' %></br>
+  <%= form.submit "2.SMTP:25",class: 'select-button'  %></br>
+  <%= form.submit "3.HTTP:80",class: 'select-button'  %></br>
+  <%= form.submit "4.DNS:53",class: 'select-button'  %></br>
+    <div class="option">
+  <span class='select-message' style='display:none;'>⭕️</span>
+  <%= form.submit "5.HTTPS:445",class: 'select-button'  %></div>
+   <span class='select-message' style='display:none;'>解説</br>
+   HTTPSのポート番号は443</span>
+   </div>
+<% end %>
+</br>
+<%= link_to "トップページ", root_path,class: :past__btn  %>
+</div>
