@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
+  adapter: mysql2
   database: cooklicense_production
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
